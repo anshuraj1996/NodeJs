@@ -1,0 +1,19 @@
+{
+  "name": "10x-nodejs-assignments",
+  "version": "1.0.0",
+  "description": "NodeJs assignment for 10x Academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:file": "jest -t"
+  },
+  "keywords": [
+    "NodeJs"
+  ],
+  "author": "Yashendra Goyal",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5",
+    "supertest": "^6.1.6"
+  }
+}
