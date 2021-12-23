@@ -7,6 +7,7 @@
 [Assignments:](assignments)
 * [Command Line Args | Env Vars | Readline](assignments/assignment_1/assignment_1.md)
 * [Simple HTTP Server](assignments/assignment_2/assignment_2.md)
+* [Express Server with GET/POST Routes](assignments/assignment_3/assignment_3.md)
 
 ## Please follow these steps before submitting
 * Create a new branch off master to code your solution into
