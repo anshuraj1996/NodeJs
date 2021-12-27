@@ -23,7 +23,7 @@ Instructions
         <button id="delete-<%= user.name %>">Delete</button>
     </form>                    
 ```
-Use method_override package to override POST to PUT/DELETE method on backend
+Use npm method-override package to override POST to PUT/DELETE method on backend
 * The Promote / Demote button should call the PUT request with the user id for that user and should change the user isPrmoted field to true (if it was null or false) else false
 * Show the users with isPromoted value as null in Yellow, isPrmoted true value in Green, isPromoted false value in Red
 * Add one more button called Delete on every user list / card and on clicking the Delete button, it should call the DELETE routee with the user id and the user should get deleted on the backend
