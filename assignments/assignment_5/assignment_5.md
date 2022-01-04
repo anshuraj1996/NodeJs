@@ -22,7 +22,7 @@ Instructions
         DELETE  -   /posts/:postId  - Delete a Post with the id provided
     ```
 * Add a middleware to perform authentication and authorization for users (only logged in users can access the posts apis - use JWT for authentication)
-* Only authorized users can perform Edit/Delete Operation for the posts
+* Only authorized users can perform Edit/Delete Operation for the posts, userA should not be able to edit/delete userB's posts
 * Use appropriate status code for different operations
 ```
 Example - Use 200 http status for successful request, use 4xx status code for unauthorized, forbidden response
