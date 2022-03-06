@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(23, 172, 110);
+}
+.null-entry{
+    color: rgb(219, 219, 22);
+}
+
+.promoted-entry{
+    color: rgb(13, 233, 13);
+}
+
+.demoted-entry{
+    color: rgb(241, 10, 10);
+  
+}
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(221, 15, 15);
+    background-color: #d6d3df;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {background-color: #af0a33}
+  
+  .button:active {
+    background-color: #16a316;
+    box-shadow: 0 8px #666;
+    transform: translateY(4px);
+  }
