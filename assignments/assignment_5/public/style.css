@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(142, 159, 235);
+}
+.null-entry{
+    color: yellow;
+}
+
+.promoted-entry{
+    color: green;
+}
+
+.demoted-entry{
+    color: red;
+}
