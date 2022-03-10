@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+       <% users.forEach((user)=>{ %>
+            <li class = "user">
+                
+                <% if (user.isPromoted==null){%>
+                    <div class="null-entry">
+                        <h3><%= user.name%></h3>
+                        <p><%= user.email%></p>
+                    </div>
+                <% } else if(user.isPromoted==true) { %>  
+                    <div class="promoted-entry">
+                        <h3><%= user.name%></h3>
+                        <p><%= user.email%></p>
+                    </div>
+                <% } else if(user.isPromoted==false){ %>  
+                    <div class="demoted-entry">
+                        <h3><%= user.name%></h3>
+                        <p><%= user.email%></p>
+                    </div>  
+                    <%}%> 
+                <form method="POST" action="/users/<%= user._id %>?_method=PUT">
+                    <button id="edit-<%= user.name %>" type="submit">Prometed/Demoted</button>
+                </form>
+                <form method="POST" action="/users/<%= user._id %>?_method=DELETE">
+                    <button id="delete-<%= user.name %>">Delete</button>
+                </form>       
+            </li>
+       <%}) %>
+    </ul>
+    <br />
+    <button class="button"><a href="/form">Add</a></button>
+</body>
+</html>
