@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose
 
 const userSchema = new Schema({
-    name: { type: String,  },
+    name: { type: String,required : true },
     email: { type: String, unique: true },
     isPromoted: {type: Boolean, default: null}
 })
